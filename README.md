@@ -1,2 +1,2 @@
-# Homebrew-we
-Homebrew tap for we
+# Homebrew-nak
+Homebrew tap for the nak editor
