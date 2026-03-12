@@ -1,26 +1,26 @@
 class Nak < Formula
   desc "A terminal-based text editor"
   homepage "https://github.com/nthparameter/nak"
-  version "0.0.13"
+  version "0.0.14"
   license :cannot_represent
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/nthparameter/homebrew-nak/releases/download/v0.0.13/nak-aarch64-apple-darwin.tar.gz"
-      sha256 "755eb43ff18d8e88e725cf4327e1f79a631baba4790a15538f29ddb3403d5bd7"
+      url "https://github.com/nthparameter/homebrew-nak/releases/download/v0.0.14/nak-aarch64-apple-darwin.tar.gz"
+      sha256 "cbf2187729e6e11507b501f2f73c5108601ebd183aeb827558159ab184a325f0"
     else
-      url "https://github.com/nthparameter/homebrew-nak/releases/download/v0.0.13/nak-x86_64-apple-darwin.tar.gz"
-      sha256 "b4c3f1a8b215a023526e5e667d4abaff3bec0922ef4720876a6d1748c175bce7"
+      url "https://github.com/nthparameter/homebrew-nak/releases/download/v0.0.14/nak-x86_64-apple-darwin.tar.gz"
+      sha256 "80b8ddc9c4556414df93c0dc83baa62ba921781bc4ed8e8f4d425ecc8136c575"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/nthparameter/homebrew-nak/releases/download/v0.0.13/nak-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "898ad5947bd9660c2caa34aaf0cb13728975dc02ffad2b39a390413b717c0bea"
+      url "https://github.com/nthparameter/homebrew-nak/releases/download/v0.0.14/nak-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "51a0c3c727425517996e514eba274bcca16dff01c5e7e135435c9eab4428bc4e"
     else
-      url "https://github.com/nthparameter/homebrew-nak/releases/download/v0.0.13/nak-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "9b218e8e3f6436971094cd3e906d73760de1b19b2010471c75d62f149d0b5401"
+      url "https://github.com/nthparameter/homebrew-nak/releases/download/v0.0.14/nak-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "d59e34167801a8deb89c38f4e8a69e0c17124555ee09321807da773233edf225"
     end
   end
 
