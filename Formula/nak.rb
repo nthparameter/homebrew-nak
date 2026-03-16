@@ -1,31 +1,32 @@
 class Nak < Formula
-  desc "A terminal-based text editor"
+  desc "A terminal-based text editor with optional GUI"
   homepage "https://github.com/nthparameter/nak"
-  version "0.0.15"
+  version "0.0.16"
   license :cannot_represent
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/nthparameter/homebrew-nak/releases/download/v0.0.15/nak-aarch64-apple-darwin.tar.gz"
-      sha256 "fb63c6c5f4f00f767dda9fc7a5122bfc54a8fed8a45a106fb155bfb507a2f4fe"
+      url "https://github.com/nthparameter/homebrew-nak/releases/download/v0.0.16/nak-aarch64-apple-darwin.tar.gz"
+      sha256 "9fd77513bbfcad12471056e3f9777ceec6d0561efc83ed8b6a89c82e9e24064e"
     else
-      url "https://github.com/nthparameter/homebrew-nak/releases/download/v0.0.15/nak-x86_64-apple-darwin.tar.gz"
-      sha256 "583f9c1303849ab44caa82b74a519cd1363f39d8e2053fdec09966d69d2ab842"
+      url "https://github.com/nthparameter/homebrew-nak/releases/download/v0.0.16/nak-x86_64-apple-darwin.tar.gz"
+      sha256 "6bb71d6bc3f9c8d3d4f4dba7f65d15bb9b6e8fd2e3957d95c1c39e32d4f35f7b"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/nthparameter/homebrew-nak/releases/download/v0.0.15/nak-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "8e76542dd4940e4d4e4f9ea2d6e3dae6d91adbba9b82768d61374815c33a6f67"
+      url "https://github.com/nthparameter/homebrew-nak/releases/download/v0.0.16/nak-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "edb52b7d8ceca779f8c004480eeb378c30f186234ed795407e150633639cab17"
     else
-      url "https://github.com/nthparameter/homebrew-nak/releases/download/v0.0.15/nak-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "b693e16f33c5094f211c7a9d1ea9d5f6c64566e2fc80755b703236a7b06c32fb"
+      url "https://github.com/nthparameter/homebrew-nak/releases/download/v0.0.16/nak-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "b0a503e9da95372c85232ecbb722cbd993fad68620f2b87ff460750ea7630fb7"
     end
   end
 
   def install
     bin.install "nak"
+    bin.install "nak-gui" if File.exist? "nak-gui"
   end
 
   test do
