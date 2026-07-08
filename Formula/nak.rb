@@ -1,16 +1,16 @@
 class Nak < Formula
   desc "A terminal-based text editor with optional GUI"
   homepage "https://github.com/nthparameter/nak"
-  version "0.1.32"
+  version "0.1.33"
   license :cannot_represent
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/nthparameter/homebrew-nak/releases/download/v0.1.32/nak-aarch64-apple-darwin.tar.gz"
-      sha256 "c6e019dcc07efdeae2974814bd651654499e1b8f691bad13eee8d3bb01522e60"
+      url "https://github.com/nthparameter/homebrew-nak/releases/download/v0.1.33/nak-aarch64-apple-darwin.tar.gz"
+      sha256 "cc7ed6ade1bea17a84771bc10093108b9d9ad2bf7260d5c9b0c6bfc506f70f2a"
     else
-      url "https://github.com/nthparameter/homebrew-nak/releases/download/v0.1.32/nak-x86_64-apple-darwin.tar.gz"
-      sha256 "ca3c5753324c10c5b38c6f96833ee4840dd49ef02a7f02e2f8661ae53c63dd11"
+      url "https://github.com/nthparameter/homebrew-nak/releases/download/v0.1.33/nak-x86_64-apple-darwin.tar.gz"
+      sha256 "bc42736520f94e01b77767bb633d0a4eeb47ae588e01b13f32144fcd4fe08d48"
     end
   end
 
